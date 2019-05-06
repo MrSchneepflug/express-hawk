@@ -1,7 +1,7 @@
 import chai, {expect} from "chai";
 import chaiHttp from "chai-http";
-import express, {Request, Response} from "express";
-import {hawk} from "../src/express-hawk";
+import express, {Response} from "express";
+import {hawk, HawkRequest} from "../src/express-hawk";
 
 chai.use(chaiHttp);
 
@@ -10,7 +10,7 @@ describe("express-hawk is an express-middleware", () => {
     app.use(hawk());
 
     it("will attach an 'isBot'-property to the request-object", (done) => {
-        app.get("/", (req: Request, res: Response) => {
+        app.get("/", (req: HawkRequest, res: Response) => {
             const hasIsBotProperty = req.hasOwnProperty("isBot");
             res.json({hasIsBotProperty});
         });
@@ -22,7 +22,7 @@ describe("express-hawk is an express-middleware", () => {
     });
 
     describe("will use a list of user-agents from a file included in this library (user-agent.blacklist)", () => {
-        app.get("/match-test", (req: Request, res: Response) => {
+        app.get("/match-test", (req: HawkRequest, res: Response) => {
             res.json({
                 isBot: req.isBot
             })
