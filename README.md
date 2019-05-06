@@ -22,7 +22,7 @@ yarn add express-hawk
 Use `express-hawk` as any other express-middleware.
 
 ```js
-import express from "express";
+import express, {Request, Response} from "express";
 import {hawk} from "express-hawk";
 
 const app = express();
@@ -32,6 +32,8 @@ app.get("/", (req: Request, res: Response) => {
     // req.isBot is now either true or false
 });
 ```
+
+The middleware uses the blacklist `user-agent.blacklist`. On each request it checks if the user-agent-header matches with an entry of this list. It sets `req.isBot` accordingly.
 
 ## Tests
 
