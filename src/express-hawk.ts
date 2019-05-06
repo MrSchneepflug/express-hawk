@@ -15,7 +15,8 @@ function hawk() {
     const blacklistRegex = new RegExp(blacklist.join("|"));
 
     return (req: Request, res: Response, next: NextFunction) => {
-        req.isBot = blacklistRegex.test(req.headers["user-agent"] || "");
+        // The user-agent could be undefined. This is fine since the test-method will return false for undefined.
+        req.isBot = blacklistRegex.test(req.headers["user-agent"] as any);
         next();
     };
 }
