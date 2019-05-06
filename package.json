@@ -19,7 +19,8 @@
   "types": "dist/express-hawk.d.ts",
   "files": [
     "dist/express-hawk.js",
-    "dist/express-hawk.d.ts"
+    "dist/express-hawk.d.ts",
+    "user-agent.blacklist"
   ],
   "author": "Mr. Schneepflug <mrschneepflug@not-my-problem.de>",
   "license": "ISC",
