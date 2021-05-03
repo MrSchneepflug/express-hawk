@@ -49,6 +49,8 @@ AddThis
 ADmantX
 AdminLabs
 adressendeutschland
+AdsBot-Google
+AdsBot-Google-Mobile
 adscanner
 Adstxtaggregator
 agentslug
@@ -260,6 +262,7 @@ drupact
 Drupal \(\+http:\/\/drupal\.org\/\)
 DTS Agent
 dubaiindex
+DuplexWeb-Google
 EARTHCOM
 Easy-Thumb
 EasyDL
@@ -313,6 +316,7 @@ FeedBucket
 FeedBunch\/
 FeedBurner
 feeder
+FeedFetcher-Google
 Feedly
 FeedshowOnline
 Feedspot
@@ -372,6 +376,7 @@ Goodzer\/
 Google AppsViewer
 Google Desktop
 Google favicon
+Google Favicon
 Google Keyword Suggestion
 Google Keyword Tool
 Google Page Speed Insights
@@ -384,15 +389,21 @@ Google-Calendar-Importer
 Google-HotelAdsVerifier
 Google-HTTP-Java-Client
 Google-Publisher-Plugin
+Google-Read-Aloud
 Google-SearchByImage
 Google-Site-Verification
 Google-Structured-Data-Testing-Tool
 Google-Youtube-Links
 google-xrawler
+Googlebot
+Googlebot-Image
+Googlebot-News
+Googlebot-Video
 GoogleDocs
 GoogleHC\/
 GoogleProducer
 GoogleSites
+googleweblight
 Google-Transparency-Report
 Gookey
 GoScraper
@@ -971,6 +982,7 @@ StackRambler
 Statastico\/
 StatusCake
 Steeler
+Storebot-Google
 Stratagems Kumo
 Stroke\.cz
 StudioFACA
