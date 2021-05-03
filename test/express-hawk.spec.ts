@@ -22,7 +22,7 @@ describe("express-hawk is an express-middleware", () => {
         });
     });
 
-    describe("will use a list of user-agents from a file included in this library (user-agent.blacklist)", () => {
+    describe("will use a list of user-agents from a file included in this library (user-agent.botlist)", () => {
         app.get("/match-test", (req: HawkRequest, res: Response) => {
             res.json({
                 isBot: req.isBot
