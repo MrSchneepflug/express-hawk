@@ -33,7 +33,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 ```
 
-The middleware uses the blacklist `user-agent.blacklist`. On each request it checks if the user-agent-header matches with an entry of this list. It sets `req.isBot` accordingly.
+The middleware uses the blacklist `user-agent.botlist`. On each request it checks if the user-agent-header matches with an entry of this list. It sets `req.isBot` accordingly.
 
 ## Tests
 
